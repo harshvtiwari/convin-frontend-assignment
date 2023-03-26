@@ -1,0 +1,54 @@
+{
+  "name": "convin_entertainment",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "husky": "^8.0.3"
+  },
+  "scripts": {
+    "start": "env-cmd -f .convin.development.env react-scripts start",
+    "build": "env-cmd -f .convin.production.env react-scripts build",
+    "build:stage": "env-cmd -f .convin.staging.env react-scripts build",
+    "build:dev": "env-cmd -f .convin.development.env react-scripts build",
+    "run:build": "yarn global add serve & serve -s build",
+    "test": "react-scripts test --env=jsdom --runInBand",
+    "test:coverage": "yarn test --coverage",
+    "eject": "react-scripts eject",
+    "lint": "eslint 'src/*/.{js,jsx,ts,tsx,json}'",
+    "lint:fix": "eslint --fix 'src/*/.{js,jsx,ts,tsx,json}'",
+    "format": "prettier --write 'src/*/.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
