@@ -1,0 +1,46 @@
+.media_card_wrapper {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0px #c1c1c1;
+    text-transform: capitalize;
+}
+
+.media_card_wrapper .media_card_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #c1c1c1;
+    padding: 10px;
+    font-weight: 600;
+}
+.media_card_wrapper span{
+    margin: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.media_card_wrapper .media_card_info .media_action_icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.media_action_icons * {
+    cursor: pointer;
+}
+
+.bucket_cards_list{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+iframe{
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+    border: none;
+}

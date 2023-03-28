@@ -1,0 +1,31 @@
+{
+  "colors": [
+    {
+      "name": "red",
+      "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0"
+    },
+    { "name": "blue", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "green", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" }
+  ],
+  "dogs": [
+    { "name": "Tom", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Bully", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Frank", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Tiger", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Kane", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" }
+  ],
+  "cats": [
+    { "name": "Molly", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Kitty", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Sweet", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Pom", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Minerva", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Magnus", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" }
+  ],
+  "anime": [
+    { "name": "Attack on titan", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Death Note", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "Naruto Shippudden", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" },
+    { "name": "My Hero Academia", "link": "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0" }
+  ]
+}
