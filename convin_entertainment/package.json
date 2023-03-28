@@ -43,8 +43,8 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "start": "env-cmd -f .convin.development.env react-scripts start",
-    "build": "env-cmd -f .convin.production.env react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "build:stage": "env-cmd -f .convin.staging.env react-scripts build",
     "build:dev": "env-cmd -f .convin.development.env react-scripts build",
     "run:build": "yarn global add serve & serve -s build",
