@@ -9,6 +9,7 @@ export interface BucketPropsInterface {
 }
 
 export interface MediaCardInterface {
+  bucket: string;
   name: string;
   link: string;
   mediaType: 'video' | 'audio';
@@ -19,6 +20,7 @@ export interface ActionInterface {
   modalState: boolean;
   setModalState: (state: boolean) => void;
   actionData?: MediaCardInterface;
+  data: { bucketTitle: string; cardTitle: string; cardLink: string };
 }
 
 export type ActionType = 'edit' | 'delete' | 'move' | 'video' | 'none';
@@ -29,5 +31,23 @@ export interface MediaCardIconsInterface {
 }
 
 export interface ErrorAlertInterface {
-  error: [boolean, string];
+  error: Error | null;
+}
+
+export interface EditCardInterface {
+  setFooterStatus: (state: boolean) => void;
+  data: { bucketTitle: string; cardTitle: string; cardLink: string };
+}
+export type BucketsObjectType = Record<string, BucketCardsPropsInterface[]>;
+
+export type UseGetDataReturnType = {
+  buckets: BucketsObjectType;
+  loading: boolean;
+  error: Error | null;
+};
+
+export interface AddCardInterface {
+  bucket: string;
+  name: string;
+  link: string;
 }

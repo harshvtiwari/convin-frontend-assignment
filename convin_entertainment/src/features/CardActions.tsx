@@ -19,7 +19,7 @@ const CardActions = React.memo((props: ActionInterface) => {
             props.setModalState(false);
           }}>
           {props.actionType === 'video' && <iframe src={props.actionData?.link} />}
-          {props.actionType === 'edit' && <EditCard setFooterStatus={setFooterStatus} />}
+          {props.actionType === 'edit' && <EditCard setFooterStatus={setFooterStatus} data={props.data} />}
           {props.actionType === 'move' && <MoveCard setFooterStatus={setFooterStatus} />}
           {props.actionType === 'delete' && <DeleteCard setFooterStatus={setFooterStatus} />}
         </Modal>

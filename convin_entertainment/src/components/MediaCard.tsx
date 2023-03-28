@@ -6,9 +6,10 @@ import MediaCardIcons from './MediaCardIcons';
 import './styles.css';
 
 const MediaCard = (props: MediaCardInterface) => {
-  const { name, mediaType } = props;
+  const { bucket, name, link, mediaType } = props;
   const [modalState, setModalState] = useState<boolean>(false);
   const [actionType, setActionType] = useState<ActionType>();
+  const data = { bucketTitle: bucket, cardTitle: name, cardLink: link };
   return (
     <div className='media_card_wrapper'>
       <div className='media_card_info'>
@@ -28,6 +29,7 @@ const MediaCard = (props: MediaCardInterface) => {
         modalState={modalState}
         setModalState={setModalState}
         actionData={props}
+        data={data}
       />
     </div>
   );

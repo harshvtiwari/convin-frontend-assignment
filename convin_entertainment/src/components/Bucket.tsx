@@ -12,7 +12,7 @@ const Bucket = (props: BucketPropsInterface) => {
       <Panel header={bucketTitle} key='1'>
         <div className='bucket_cards_list'>
           {bucketCards.map((card, index) => {
-            return <MediaCard name={card.name} link={card.link} mediaType='video' key={index} />;
+            return <MediaCard name={card.name} link={card.link} mediaType='video' key={index} bucket={bucketTitle} />;
           })}
         </div>
       </Panel>

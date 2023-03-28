@@ -1,31 +1,28 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import type { BucketCardsPropsInterface } from 'utils/_interface';
+import { useEffect, useState } from 'react';
+import type { BucketsObjectType, UseGetDataReturnType } from 'utils/_interface';
 
-/**
- *
- * @params none
- * @return [data, [boolean, string]]
- * data is from [GET] of api
- * boolean informs if there is ny error to be shown
- * string contains the error description
- */
+const useGetData = (apiUrl: string): UseGetDataReturnType => {
+  const [buckets, setBuckets] = useState<BucketsObjectType>({});
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<Error | null>(null);
 
-type BucketsObjectType = Record<string, BucketCardsPropsInterface[]>;
-const useGetData = (): [BucketsObjectType, [boolean, string]] => {
-  const [bucket, setBucket] = useState<BucketsObjectType>({});
-  const [showError, setShowError] = useState<[boolean, string]>([false, '']);
   useEffect(() => {
-    axios
-      .get('http://demo3847180.mockable.io/bucket')
-      .then(res => {
-        setBucket(res.data);
-      })
-      .catch(err => {
-        setShowError([true, err]);
-      });
-  }, []);
-  return [bucket, showError];
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const response = await axios.get(apiUrl);
+        setBuckets(response.data);
+        setError(null);
+      } catch (err) {
+        setError(err as Error);
+      }
+      setLoading(false);
+    };
+    void fetchData();
+  }, [apiUrl]);
+
+  return { buckets, loading, error };
 };
 
 export default useGetData;
