@@ -8,7 +8,7 @@ import { useCallback, useMemo } from 'react';
 import './styles.css';
 
 const Dashboard = () => {
-  const { buckets, loading, error } = useGetData('http://demo3847180.mockable.io/bucket');
+  const { buckets, loading, error } = useGetData('./data.json');
   const renderBucketList = useCallback((): JSX.Element[] => {
     return Object.entries(buckets).map(([key, value], index) => (
       <Col span={12} key={index}>
