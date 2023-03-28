@@ -1,26 +1,27 @@
-.add_card_wrapper{
+.add_card_wrapper, .edit_card_wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
 }
+
+.edit_card_wrapper{
+    margin-top: 20px;
+}
 .card_info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
 }
 label {
     display: inline-block;
-    min-width: 100px;
+    min-width: 120px;
     font-weight: 600;
 }
-input {
-    width: 400px;
+.add_card_input {
+    min-width: 300px;
     height: 30px;
-    border: 1.5px solid #c7b9cc;
-    border-radius: 4px;
-    outline: none;
     padding-left: 5px;
 }
 

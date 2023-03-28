@@ -4,9 +4,9 @@ import type { ErrorAlertInterface } from 'utils/_interface';
 const ErrorAlert = (props: ErrorAlertInterface): JSX.Element => {
   return (
     <>
-      {props.error[0] && (
+      {props.error && (
         <Space direction='vertical'>
-          <Alert message='Error fetching data' description={props.error[1]} type='error' showIcon closable />
+          <Alert message='Error fetching data' type='error' showIcon closable />
         </Space>
       )}
     </>
