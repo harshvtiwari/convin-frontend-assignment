@@ -17,13 +17,14 @@ const Dashboard = () => {
     ));
   }, [buckets]);
   const bucketCols = useMemo(() => renderBucketList(), [renderBucketList]);
+  const gap = 10;
   return (
     <div className='main'>
       <Navbar />
       <div className='dashboard_wrapper'>
         <ErrorAlert error={error} />
         <AddCard />
-        {loading ? 'Loading...' : <Row gutter={[10, 10]}>{bucketCols}</Row>}
+        {loading ? 'Loading...' : <Row gutter={[gap, gap]}>{bucketCols}</Row>}
       </div>
     </div>
   );
