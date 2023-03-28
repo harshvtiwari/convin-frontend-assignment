@@ -1,0 +1,35 @@
+
+.login_brand_info {
+  background-color: #e2e2e2;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_brand_info span:nth-child(1){
+  font-size: 56px;
+}
+.login_brand_info span:nth-child(2){
+  font-size: 40px;
+}
+
+.auth_wrapper{
+  height:100svh;
+  padding: 30px;
+  box-shadow: 1px 4px 4px 4px #9c9c9c;
+}
+
+.dashboard_wrapper{
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bucket_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
