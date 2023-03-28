@@ -12,11 +12,8 @@ const AddCard = () => {
       setLoading(true);
       try {
         // TODO: Submit form values to server
-        console.log(values);
         form.resetFields();
-      } catch (err) {
-        console.error(err);
-      }
+      } catch (err) {}
       setLoading(false);
     },
     [form],
